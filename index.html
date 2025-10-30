@@ -66,9 +66,18 @@
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       
-      // APNI PIXEL ID YAHAN PASTE KARNA THA: 408532039478774
+      // PIXEL ID: 408532039478774
       fbq('init', '408532039478774'); 
       fbq('track', 'PageView');
+
+      // CUSTOM TRACKING FUNCTION FOR BUTTON CLICKS
+      function trackButtonClick() {
+          // Hum is click ko 'InitiateCheckout' (Pehla step lene wala) event maan rahe hain.
+          // Agar aap isko 'Lead' ya 'Purchase' manna chahte hain, toh 'InitiateCheckout' ko badal sakte hain.
+          fbq('track', 'InitiateCheckout'); 
+          console.log('Meta event: InitiateCheckout fired!');
+      }
+
     </script>
     <noscript>
       <img height="1" width="1" style="display:none"
@@ -123,7 +132,8 @@
             </div>
 
             <!-- Primary Call to Action Button -->
-            <a id="joinNowButton" href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" class="cta-button inline-flex items-center justify-center text-xl sm:text-2xl font-black text-white px-8 py-4 rounded-full w-full max-w-sm sm:max-w-md mx-auto transform transition duration-300">
+            <!-- TRACKING ADDED HERE: onClick="trackButtonClick()" -->
+            <a id="joinNowButton" href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="cta-button inline-flex items-center justify-center text-xl sm:text-2xl font-black text-white px-8 py-4 rounded-full w-full max-w-sm sm:max-w-md mx-auto transform transition duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
@@ -221,7 +231,8 @@
         <!-- Footer / Secondary CTA -->
         <footer class="text-center p-6 mt-8 card rounded-xl shadow-lg">
             <h4 class="text-xl font-bold mb-3">🔥 Der Mat Karo!</h4>
-            <a href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-black text-lg py-3 px-6 rounded-full shadow-lg transition duration-200">
+            <!-- TRACKING ADDED HERE: onClick="trackButtonClick()" -->
+            <a href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="bg-red-600 hover:bg-red-700 text-white font-black text-lg py-3 px-6 rounded-full shadow-lg transition duration-200">
                 ABHI REGISTER KAREIN! 
             </a>
             <p class="text-sm mt-3 text-gray-400">Apna referral code **wg9ofP** zarur use karein.</p>

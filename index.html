@@ -1,283 +1,208 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚀 OnePay Agent Program | Daily Stable Income</title>
+    <title>🚀 OnePay: Daily ₹18,150 Tak Kamao! Instant ₹100 Bonus!</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="OnePay aur Muahshi Digital ke high-income platform se roz kamaayein! Naye users ke liye ₹100 bonus aur refer karke double reward. Stable aur surakshit earning ka mauka. Abhi join karein!">
+    <meta name="keywords" content="OnePay, Muahshi Digital, online earning, daily income, part-time job, referral program, high income, earn money online">
+
+    <!-- Open Graph (OG) Tags for Meta Ads & Social Sharing -->
+    <!-- IMPORTANT: Replace 'YOUR_LIVE_WEBPAGE_URL_HERE' with the actual deployed URL -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_LIVE_WEBPAGE_URL_HERE"> 
+    <meta property="og:title" content="🔥 OnePay: Daily ₹18,150 Tak Kamao! Instant ₹100 Bonus!">
+    <meta property="og:description" content="Muahshi Digital × OnePay: High-income platform. Register karo, pehla task complete karo, ₹100 turant paao. Refer karo aur double kamao!">
+    <!-- You must create and upload a banner image for the best results and replace the URL below -->
+    <meta property="og:image" content="https://i.imgur.com/your-onepay-banner-image.png"> 
+    <meta property="twitter:card" content="summary_large_image">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Custom Styles for Banner Theme */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0b0c2a; /* Dark Blue Background matching Banner */
-            color: #f0f3ff;
-            /* Starry background effect for aesthetics */
-            background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
+            background: linear-gradient(135deg, #1f2937, #0f172a); /* Dark Blue Gradient Background */
+            color: #f3f4f6;
         }
-
-        .gradient-text {
-            /* Vibrant Text like the banner */
-            background-image: linear-gradient(90deg, #00f0ff, #ff80a0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        .card {
+            background-color: #1a202c;
+            border: 1px solid #2d3748;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
-        
         .cta-button {
-            /* Orange/Red Gradient Button like the banner */
-            background: linear-gradient(90deg, #ff8a00, #e90059);
-            box-shadow: 0 4px 15px rgba(255, 100, 0, 0.5);
-            transition: transform 0.2s;
+            background: linear-gradient(90deg, #ff9a8d, #ff6a88, #ff99ac);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 106, 136, 0.5);
         }
-
-        .card {
-            background-color: rgba(18, 19, 58, 0.7); /* Slightly Lighter Dark Blue for cards */
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
-
-        /* Responsive Table adjustments for Mobile */
-        .responsive-table th, .responsive-table td {
-            padding: 8px 10px;
-            font-size: 0.8rem;
+        .commission-table th {
+            background-color: #2d3748;
+            color: #fef08a;
         }
-        @media (max-width: 640px) {
-            .responsive-table th, .responsive-table td {
-                padding: 6px 8px;
-                font-size: 0.7rem;
-            }
+        .commission-table td {
+            background-color: #1a202c;
+            border-bottom: 1px solid #2d3748;
         }
     </style>
-
-    <!-- 🎯 META PIXEL CODE (UPDATED: 1352901129578924) -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      
-      // PIXEL ID: 1352901129578924 (NEW PIXEL)
-      fbq('init', '1352901129578924'); 
-      fbq('track', 'PageView');
-
-      // CUSTOM TRACKING FUNCTION FOR BUTTON CLICKS
-      function trackButtonClick() {
-          // Hum is click ko 'InitiateCheckout' (Pehla step lene wala) event maan rahe hain.
-          // Naya PIXEL ID use kiya gaya hai.
-          fbq('track', 'InitiateCheckout'); 
-          console.log('Meta event: InitiateCheckout fired on new Pixel!');
-      }
-
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=1352901129578924&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- END META PIXEL CODE -->
-
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="OnePay और Muahshi Digital के high-income platform से रोज़ कमाएँ! Naye users ke liye ₹100 bonus aur refer karke double reward. Stable aur surakshit earning ka mauka. Abhi join karein!">
-    <meta name="keywords" content="OnePay, Muahshi Digital, online earning, daily income, part-time job, referral program, high income, earn money online, secure earning, stable income, financial freedom, make money, work from home, earn from mobile, India, Hindi">
-    
-    <!-- Open Graph Tags for Meta Ads/Social Sharing (CRITICAL) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://muahshi.github.io/Muahshi-Digital-Onepay/"> 
-    <meta property="og:title" content="🚀 OnePay: Daily ₹18,150 Tak Kamao! Instant ₹100 Bonus!">
-    <meta property="og:description" content="Muahshi Digital × OnePay: High-income platform. Register karo, pehla task complete karo, ₹100 turant paao. Refer karo aur double kamao!">
-    <meta property="og:image" content="https://i.imgur.com/b9UaL8T.png"> 
-
-    <!-- Twitter Card Tags -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://muahshi.github.io/Muahshi-Digital-Onepay/">
-    <meta property="twitter:title" content="🚀 OnePay: Daily ₹18,150 Tak Kamao! Instant ₹100 Bonus!">
-    <meta property="twitter:description" content="Muahshi Digital × OnePay: High-income platform. Register karo, pehla task complete karo, ₹100 turant paao. Refer karo aur double kamao!">
-    <meta property="twitter:image" content="https://i.imgur.com/b9UaL8T.png">
 </head>
-<body class="min-h-screen p-4 sm:p-8">
+<body class="min-h-screen p-4 md:p-8">
 
-    <div class="max-w-4xl mx-auto space-y-8 pb-10">
+    <!-- Header & Branding -->
+    <header class="text-center mb-8">
+        <div class="text-xl font-bold text-sky-400 mb-1">Muahshi Digital × OnePay</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-sky-400 glow-text">HIGH-INCOME PLATFORM</span> 🚀
+        </h1>
+        <p class="text-lg mt-2 text-gray-300">Har Din ₹150 Se ₹18,150 Tak Kamao, Secure Aur Stable!</p>
+    </header>
 
-        <!-- Header / Main CTA Section -->
-        <header class="text-center p-6 sm:p-10 card rounded-2xl shadow-2xl">
-            <h1 class="text-3xl sm:text-5xl font-extrabold mb-3">
-                <span class="gradient-text">MUAHSHI DIGITAL × ONEPAY</span>
-            </h1>
-            <p class="text-xl sm:text-2xl font-bold text-yellow-400 mb-6">
-                🔥 High-Income Platform Launch! 🔥
-            </p>
+    <main class="max-w-4xl mx-auto space-y-12">
+
+        <!-- Referral Code & CTA Block -->
+        <section class="card p-6 md:p-8 rounded-2xl text-center border-4 border-yellow-500/50">
+            <p class="text-xl font-semibold mb-3 text-yellow-400">Aapka Exclusive Invitation Code:</p>
             
-            <h2 class="text-2xl sm:text-4xl font-black mb-6 leading-tight">
-                <span class="text-white">Roz Kamao</span> <span class="gradient-text">₹18,150 TAK!</span> 
-            </h2>
-
-            <!-- Main Bonus Offer -->
-            <div class="bg-purple-800/30 p-4 sm:p-6 rounded-xl border border-yellow-500/50 shadow-lg mb-8">
-                <p class="text-xl sm:text-3xl font-bold text-white flex items-center justify-center">
-                    <span class="mr-3 text-3xl sm:text-4xl">✨</span> Naye Users Ke Liye Special Offer:
-                </p>
-                <p class="text-3xl sm:text-5xl font-black text-yellow-300 mt-2">
-                    INSTANT ₹100 BONUS! 🎁
-                </p>
-                <p class="text-sm text-gray-300 mt-2">(Pehla Simple Task Complete Karte Hi)</p>
-            </div>
-
-            <!-- Primary Call to Action Button -->
-            <!-- TRACKING ADDED HERE: onClick="trackButtonClick()" -->
-            <a id="joinNowButton" href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="cta-button inline-flex items-center justify-center text-xl sm:text-2xl font-black text-white px-8 py-4 rounded-full w-full max-w-sm sm:max-w-md mx-auto transform transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-                ABHI JOIN KAREIN AUR KAMANNA SHURU MAREIN! 🔥
-            </a>
-            <p class="text-xs mt-3 text-gray-400 font-semibold">Limited Time Offer. Jaldi Join Karo, Zyada Kamao!</p>
-
-        </header>
-
-        <!-- Referral Code Section -->
-        <section class="p-6 card rounded-2xl text-center shadow-xl">
-            <h3 class="text-xl sm:text-2xl font-bold mb-4 text-green-400">✅ Aapka Official Invitation Code:</h3>
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <span id="referralCode" class="text-4xl sm:text-5xl font-extrabold px-6 py-3 rounded-xl bg-gray-900 border-2 border-green-500 tracking-wider select-all">
-                    wg9ofP
-                </span>
-                <button onclick="copyToClipboard('wg9ofP', 'code-copy-status')" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-200">
-                    Code Copy Karein
+            <div id="referralCodeDisplay" class="bg-gray-700/50 p-3 rounded-xl mb-4 flex items-center justify-between">
+                <!-- Refer Code -->
+                <span id="codeValue" class="text-3xl md:text-4xl font-black tracking-widest text-white select-all">wg9ofP</span>
+                <button onclick="copyToClipboard('wg9ofP', 'copyCodeBtn')" id="copyCodeBtn" 
+                        class="ml-4 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold rounded-lg transition duration-200 shadow-lg whitespace-nowrap">
+                    COPY CODE
                 </button>
             </div>
-            <p id="code-copy-status" class="text-sm mt-3 text-gray-400 h-4"></p>
-        </section>
 
-        <!-- Income Chart and Trust -->
-        <section class="grid md:grid-cols-2 gap-6">
-            
-            <!-- Income Chart -->
-            <div class="card p-6 rounded-2xl shadow-xl">
-                <h3 class="text-xl font-bold mb-4 text-center gradient-text">💰 DAILY TASK COMMISSION DETAILS</h3>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left responsive-table">
-                        <thead class="text-xs uppercase bg-gray-700/50">
-                            <tr>
-                                <th scope="col" class="px-3 py-2">Level</th>
-                                <th scope="col" class="px-3 py-2">Order (₹)</th>
-                                <th scope="col" class="px-3 py-2">Comm. (₹)</th>
-                                <th scope="col" class="px-3 py-2">Orders</th>
-                                <th scope="col" class="px-3 py-2 text-yellow-400">Total Daily (₹)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L1</td><td>100</td><td>5</td><td>30</td><td class="text-yellow-300">150</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L4</td><td>1000</td><td>34</td><td>30</td><td class="text-yellow-300">1020</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L6</td><td>3000</td><td>94</td><td>30</td><td class="text-yellow-300">2820</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L8</td><td>10000</td><td>305</td><td>30</td><td class="text-yellow-300">9150</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L9</td><td>20000</td><td>605</td><td>30</td><td class="text-4xl font-bold text-green-400">18150</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <p class="text-lg text-gray-400 mb-6 font-semibold">Sirf Register Karo Aur Pehla Task Complete Karo: **₹100 Turant Paao!**</p>
 
-            <!-- Key Benefits / Trust Points -->
-            <div class="card p-6 rounded-2xl shadow-xl flex flex-col justify-center space-y-4">
-                <h3 class="text-xl font-bold mb-4 text-center gradient-text">⭐ WHY JOIN ONEPAY?</h3>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-green-400">✅</span>
-                    <div>
-                        <p class="font-bold text-lg">Official Partnership</p>
-                        <p class="text-sm text-gray-400">Muahshi Digital aur OnePay ka bharosemand collaboration.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-green-400">🛡️</span>
-                    <div>
-                        <p class="font-bold text-lg">Safe & Secure Income</p>
-                        <p class="text-sm text-gray-400">Stable income ke saath roz paise kamao.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-yellow-400">💸</span>
-                    <div>
-                        <p class="font-bold text-lg">Invite & Double Reward</p>
-                        <p class="text-sm text-gray-400">Dost ko invite karo aur long-term team income paao.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-red-400">🚀</span>
-                    <div>
-                        <p class="font-bold text-lg">Instant Withdrawal</p>
-                        <p class="text-sm text-gray-400">Sirf do tasks complete karne ke baad withdrawal available.</p>
-                    </div>
-                </div>
-                <div class="mt-4 pt-4 border-t border-gray-700/50">
-                    <a href="https://t.me/+4UYBvqMvZFI2ZDdl" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors block text-center font-semibold text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline-block mr-2">
-                          <path d="M7.749 20.301 22 3.513 14.636 21.487l-3.328-8.209-3.559 3.559.001.001 7.279-7.279.792-.792.001-.001-8.23-3.332-1.928 4.793z"/>
-                        </svg>
-                        Official Telegram Group Join Karein
-                    </a>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Footer / Secondary CTA -->
-        <footer class="text-center p-6 mt-8 card rounded-xl shadow-lg">
-            <h4 class="text-xl font-bold mb-3">🔥 Der Mat Karo!</h4>
-            <!-- TRACKING ADDED HERE: onClick="trackButtonClick()" -->
-            <a href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="bg-red-600 hover:bg-red-700 text-white font-black text-lg py-3 px-6 rounded-full shadow-lg transition duration-200">
-                ABHI REGISTER KAREIN! 
+            <!-- Refer Link -->
+            <a href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" 
+               class="cta-button inline-block w-full py-4 text-xl font-bold text-white rounded-xl shadow-2xl uppercase tracking-wider">
+                💥 ABHI JOIN KAREIN AUR Earning SHURU KAREIN!
             </a>
-            <p class="text-sm mt-3 text-gray-400">Apna referral code **wg9ofP** zarur use karein.</p>
-        </footer>
+            <p class="text-xs mt-2 text-gray-500">Yeh official partner link hai. Bina kisi rukawat ke register karein.</p>
+        </section>
 
-    </div>
+        <!-- New User & Universal Agent Offer -->
+        <section class="grid md:grid-cols-2 gap-6">
+            <!-- New User Offer Card -->
+            <div class="card p-6 rounded-xl">
+                <h2 class="text-2xl font-bold text-pink-400 mb-3 flex items-center">
+                    <span class="text-3xl mr-2">🎁</span> Naye Users Ke Liye
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✅</span> Register + 1 Simple Task = **Instant ₹100**</li>
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✅</span> Total ₹200 Bonus Se Earning Start Hogi!</li>
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✅</span> Withdrawal Bhi Turant Possible!</li>
+                </ul>
+            </div>
+
+            <!-- Agent Program Card -->
+            <div class="card p-6 rounded-xl">
+                <h2 class="text-2xl font-bold text-sky-400 mb-3 flex items-center">
+                    <span class="text-3xl mr-2">💰</span> Referral Rewards (Double Income!)
+                </h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✨</span> **Cash Reward** Har Successful Invite Par.</li>
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✨</span> **Long-Term Team Income** Alag Se.</li>
+                    <li class="flex items-center"><span class="text-green-400 text-xl mr-2">✨</span> 10 Friends Par **Extra ₹1500 Bonus!**</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Daily Income Table -->
+        <section class="card p-6 rounded-2xl overflow-x-auto">
+            <h2 class="text-3xl font-bold text-sky-400 mb-4 text-center">💸 DAILY COMMISSION STRUCTURE (30 ORDERS)</h2>
+            <p class="text-center text-gray-400 mb-4">Aap jitna zyada active rahenge, utna hi zyada kamaenge!</p>
+            
+            <table class="w-full text-sm text-left commission-table rounded-lg overflow-hidden">
+                <thead>
+                    <tr>
+                        <th scope="col" class="px-3 py-3 rounded-tl-lg">Level</th>
+                        <th scope="col" class="px-3 py-3">Order Amt (₹)</th>
+                        <th scope="col" class="px-3 py-3">Comm./Order (₹)</th>
+                        <th scope="col" class="px-3 py-3 rounded-tr-lg text-right">Total Daily (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-800/50"><td class="px-3 py-2 font-medium">L1</td><td class="px-3 py-2">100</td><td class="px-3 py-2">5</td><td class="px-3 py-2 text-right">150</td></tr>
+                    <tr class="hover:bg-gray-800/50"><td class="px-3 py-2 font-medium">L3</td><td class="px-3 py-2">500</td><td class="px-3 py-2">19</td><td class="px-3 py-2 text-right">570</td></tr>
+                    <tr class="hover:bg-gray-800/50"><td class="px-3 py-2 font-medium">L5</td><td class="px-3 py-2">2,000</td><td class="px-3 py-2">64</td><td class="px-3 py-2 text-right">1,920</td></tr>
+                    <tr class="hover:bg-gray-800/50"><td class="px-3 py-2 font-medium">L7</td><td class="px-3 py-2">5,000</td><td class="px-3 py-2">154</td><td class="px-3 py-2 text-right">4,620</td></tr>
+                    <tr class="hover:bg-gray-800/50"><td class="px-3 py-2 font-medium">L9</td><td class="px-3 py-2">20,000</td><td class="px-3 py-2">605</td><td class="px-3 py-2 text-right text-yellow-500 font-bold">18,150</td></tr>
+                </tbody>
+            </table>
+            <p class="text-xs text-gray-500 mt-4">Poori list (L1-L9) official app mein dekhein. Yeh sirf high-level earnings dikhane ke liye hai.</p>
+        </section>
+
+        <!-- Telegram Link & Support -->
+        <section class="text-center card p-6 rounded-2xl">
+            <p class="text-xl font-semibold mb-4 text-white">Official Group Aur Support Ke Liye Join Karein:</p>
+            <a href="https://t.me/+4UYBvqMvZFI2ZDdl" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full shadow-xl transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M11.968 15.655l2.766 2.662c.4.384 1 .135 1-.433V11.2c0-.528-.48-.95-1.077-.95h-2.128c-.6 0-1.077.422-1.077.95v4.455c0 .245.176.4.342.342zM4.942 9.25c.61 0 1.107-.442 1.107-1.054V3.123c0-.592-.477-1.072-1.072-1.072H2.607c-.596 0-1.077.48-1.077 1.072v6.073c0 .612.497 1.108 1.107 1.108h2.305zm5.178 0c.61 0 1.108-.442 1.108-1.054V3.123c0-.592-.478-1.072-1.073-1.072H7.781c-.596 0-1.077.48-1.077 1.072v6.073c0 .612.497 1.108 1.107 1.108h2.305zm5.178 0c.61 0 1.108-.442 1.108-1.054V3.123c0-.592-.478-1.072-1.073-1.072h-2.305c-.596 0-1.077.48-1.077 1.072v6.073c0 .612.497 1.108 1.107 1.108h2.305zM.088 15.655l2.766 2.662c.4.384 1 .135 1-.433V11.2c0-.528-.48-.95-1.077-.95H.766c-.6 0-1.077.422-1.077.95v4.455c0 .245.176.4.342.342z"/>
+                </svg>
+                Official Telegram Group Join Karein
+            </a>
+            <p class="text-sm text-gray-400 mt-3">Customer Support ki jaankari group mein available hai.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-gray-500 text-sm">
+        <p>Muahshi Digital × OnePay: Official Partnership · Trusted Platform.</p>
+        <p>Jitna jaldi join karoge, utna zyada kamaoge! 🚀</p>
+    </footer>
 
     <!-- JavaScript for Copy Functionality -->
     <script>
-        // Function to copy text to clipboard (required for iFrame compatibility)
-        function copyToClipboard(text, statusElementId) {
-            const textarea = document.createElement('textarea');
-            textarea.value = text;
-            textarea.style.position = 'fixed'; // Avoid scrolling to the bottom
-            document.body.appendChild(textarea);
-            textarea.focus();
-            textarea.select();
+        function copyToClipboard(text, buttonId) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            
+            let success = false;
             try {
-                const successful = document.execCommand('copy');
-                const statusElement = document.getElementById(statusElementId);
-                if (successful) {
-                    statusElement.textContent = '✅ Code Copy Ho Gaya!';
-                    statusElement.classList.add('text-green-400');
-                    statusElement.classList.remove('text-red-400');
-                } else {
-                    statusElement.textContent = '❌ Copy Failed. Manually copy karein.';
-                    statusElement.classList.add('text-red-400');
-                    statusElement.classList.remove('text-green-400');
-                }
+                success = document.execCommand('copy');
             } catch (err) {
                 console.error('Copy failed:', err);
-                const statusElement = document.getElementById(statusElementId);
-                statusElement.textContent = '❌ Copy Failed. Manually copy karein.';
-                statusElement.classList.add('text-red-400');
-                statusElement.classList.remove('text-green-400');
             }
-            document.body.removeChild(textarea);
+            
+            document.body.removeChild(tempInput);
+            
+            const button = document.getElementById(buttonId);
+            const originalText = button.innerHTML;
+            
+            if (success) {
+                button.innerHTML = 'COPIED! ✅';
+                button.classList.remove('bg-yellow-500', 'hover:bg-yellow-600');
+                button.classList.add('bg-green-500', 'hover:bg-green-600');
+            } else {
+                button.innerHTML = 'Failed! ❌';
+                button.classList.remove('bg-yellow-500', 'hover:bg-yellow-600');
+                button.classList.add('bg-red-500', 'hover:bg-red-600');
+            }
 
-            // Clear status after 3 seconds
             setTimeout(() => {
-                const statusElement = document.getElementById(statusElementId);
-                if(statusElement) statusElement.textContent = '';
-            }, 3000);
+                button.innerHTML = originalText;
+                if (success) {
+                    button.classList.remove('bg-green-500', 'hover:bg-green-600');
+                    button.classList.add('bg-yellow-500', 'hover:bg-yellow-600');
+                } else {
+                    button.classList.remove('bg-red-500', 'hover:bg-red-600');
+                    button.classList.add('bg-yellow-500', 'hover:bg-yellow-600');
+                }
+            }, 2000);
         }
     </script>
 </body>
 </html>
-

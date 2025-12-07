@@ -1,422 +1,300 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️ Muahshi Digital × OnePay | High-Trust Earning Platform</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom Styles for Banner Theme */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0b0c2a; /* Dark Blue Background matching Banner */
-            color: #f0f3ff;
-            /* Starry background effect for aesthetics */
-            background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dailymoneyhub — Earn Daily | OnePay · InCoinPay · BigWinner</title>
+  <meta name="description" content="Dailymoneyhub: Guides & direct referral links to OnePay, InCoinPay and BigWinner. Step-by-step guides, safe tips and affiliate disclosure.">
+  <link rel="canonical" href="https://dailymoneyhub.example.com/">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0b6b4f">
 
-        .gradient-text {
-            /* Vibrant Text like the banner */
-            background-image: linear-gradient(90deg, #00f0ff, #ff80a0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .cta-button {
-            /* Orange/Red Gradient Button like the banner */
-            background: linear-gradient(90deg, #ff8a00, #e90059);
-            box-shadow: 0 4px 15px rgba(255, 100, 0, 0.5);
-            transition: transform 0.2s;
-        }
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
+  <!-- Structured data (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Dailymoneyhub",
+    "url":"https://dailymoneyhub.example.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://dailymoneyhub.example.com/?s={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
 
-        .card {
-            background-color: rgba(18, 19, 58, 0.8); /* Slightly Lighter Dark Blue for cards */
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        /* Responsive Table adjustments for Mobile */
-        .responsive-table th, .responsive-table td {
-            padding: 8px 10px;
-            font-size: 0.8rem;
-        }
-        @media (max-width: 640px) {
-            .responsive-table th, .responsive-table td {
-                padding: 6px 8px;
-                font-size: 0.7rem;
-            }
-        }
-        
-        /* Floating notification card styles */
-        #notification-card {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 350px;
-            z-index: 1000;
-            opacity: 0;
-            transition: all 0.5s ease-in-out;
-            animation: slideIn 0.5s forwards, slideOut 0.5s 4s forwards;
-        }
-
-        @keyframes slideIn {
-            0% { transform: translate(-50%, 100%); opacity: 0; }
-            100% { transform: translate(-50%, 0); opacity: 1; }
-        }
-
-        @keyframes slideOut {
-            0% { transform: translate(-50%, 0); opacity: 1; }
-            100% { transform: translate(-50%, 100%); opacity: 0; }
-        }
-
-        /* YouTube Embed Responsive */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
-            border-radius: 12px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-
-    <!-- 🎯 META PIXEL CODE (CRITICAL) -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      
-      // PIXEL ID: 1352901129578924
-      fbq('init', '1352901129578924'); 
-      fbq('track', 'PageView');
-
-      // CUSTOM TRACKING FUNCTION FOR BUTTON CLICKS
-      function trackButtonClick() {
-          fbq('track', 'InitiateCheckout'); 
-          console.log('Meta event: InitiateCheckout fired!');
-      }
-
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=1352901129578924&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- END META PIXEL CODE -->
-
-    <!-- Meta Tags for SEO and Social Sharing (Best Practices) -->
-    <meta property="og:title" content="🚀 OnePay: Daily ₹18,150 Tak Kamao! Instant ₹100 Bonus!">
-    <meta property="og:description" content="Muahshi Digital × OnePay: High-income platform. Register karo, pehla task complete karo, ₹100 turant paao. Refer karo aur double kamao!">
-    <meta property="og:image" content="https://i.imgur.com/b9UaL8T.png"> <!-- Placeholder image URL -->
+  <style>
+    :root{--accent:#0b6b4f;--accent-2:#0f855d;--muted:#6b7280;--card:#ffffff;--bg:#f7faf7}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.45;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,16,20,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .apps{display:flex;flex-direction:column;gap:12px}
+    .app{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;border:1px solid #eef2f4}
+    .app .logo-sm{width:56px;height:56px;border-radius:10px;background:#f3f6f5;display:flex;align-items:center;justify-content:center;font-weight:600}
+    .app .info{flex:1}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    .muted{color:var(--muted);font-size:14px}
+    .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .badge{background:#eefaf6;padding:8px 10px;border-radius:8px;color:var(--accent-2);font-weight:600}
+    .adsafe{border-left:4px solid #f59e0b;padding:12px;background:#fff8ed;border-radius:8px;margin-top:12px}
+    footer{margin:28px 0 80px;color:var(--muted);font-size:14px}
+    .ad-slot{min-height:90px;border:2px dashed #e6eef3;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:#fff}
+    .sidebar{display:flex;flex-direction:column;gap:12px}
+    .faq{margin-top:16px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .blog-list{display:flex;flex-direction:column;gap:10px}
+    .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(6,6,6,0.45);z-index:9999}
+    .modal-card{width:min(740px,92%);background:#fff;padding:18px;border-radius:12px}
+    .close{float:right;border:none;background:transparent;font-size:20px}
+    .small{font-size:13px;color:var(--muted)}
+    .cookie{position:fixed;left:12px;right:12px;bottom:12px;background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(12,16,20,0.08);display:flex;gap:12px;align-items:center;justify-content:space-between}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.logo{width:48px;height:48px}.brand h2{font-size:18px}}
+  </style>
 </head>
-<body class="min-h-screen p-4 sm:p-8">
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DM</div>
+        <div>
+          <h2 style="margin:0">Dailymoneyhub</h2>
+          <div class="small">One place — OnePay · InCoinPay · BigWinner</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#apps">Apps</a>
+        <a href="#how">How it Works</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="/privacy.html" style="margin-left:14px;color:var(--muted)">Privacy</a>
+      </nav>
+    </header>
 
-    <div class="max-w-4xl mx-auto space-y-8 pb-32">
-        <!-- Header / Main CTA Section -->
-        <header class="text-center p-6 sm:p-10 card rounded-2xl shadow-2xl">
-            <h1 class="text-3xl sm:text-5xl font-extrabold mb-3">
-                <span class="gradient-text">MUAHSHI DIGITAL × ONEPAY</span>
-            </h1>
-            <p class="text-xl sm:text-2xl font-bold text-yellow-400 mb-6">
-                🔥 High-Income Platform Launch! 🔥
-            </p>
-            
-            <h2 class="text-2xl sm:text-4xl font-black mb-6 leading-tight">
-                <span class="text-white">Roz Kamao</span> <span class="gradient-text">₹18,150 TAK!</span> 
-            </h2>
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Earn up to <span style="color:var(--accent);">₹1000/day</span> — Safe steps & referral offers</h1>
+          <p class="lead">Step-by-step guides, withdrawal tips and transparent affiliate disclosure. Start small, verify identity, and never share sensitive info with unknown third parties.</p>
 
-            <!-- Main Bonus Offer -->
-            <div class="bg-purple-800/30 p-4 sm:p-6 rounded-xl border border-yellow-500/50 shadow-lg mb-8">
-                <p class="text-xl sm:text-3xl font-bold text-white flex items-center justify-center">
-                    <span class="mr-3 text-3xl sm:text-4xl">✨</span> Naye Users Ke Liye Special Offer:
-                </p>
-                <p class="text-3xl sm:text-5xl font-black text-yellow-300 mt-2">
-                    INSTANT ₹100 BONUS! 🎁
-                </p>
-                <p class="text-sm text-gray-300 mt-2">(Pehla Simple Task Complete Karte Hi)</p>
-            </div>
+          <div class="trust">
+            <div class="badge">Instant Withdrawals (If supported)</div>
+            <div class="badge">Step-by-step Guides</div>
+            <div class="badge">Affiliate Links</div>
+          </div>
 
-            <!-- Primary Call to Action Button -->
-            <a id="joinNowButton" href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="cta-button inline-flex items-center justify-center text-xl sm:text-2xl font-black text-white px-8 py-4 rounded-full w-full max-w-sm sm:max-w-md mx-auto transform transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-                ABHI JOIN KAREIN AUR KAMANNA SHURU MAREIN! 🔥
-            </a>
-            <p class="text-xs mt-3 text-gray-400 font-semibold">Limited Time Offer. Jaldi Join Karo, Zyada Kamao!</p>
+          <div style="margin-top:16px">
+            <a class="btn" href="#apps">Start Now</a>
+            <a style="margin-left:10px;text-decoration:none;color:var(--muted)" href="#faq">See FAQ</a>
+          </div>
 
-        </header>
-
-        <!-- Live Activity Card (Trust Builder) -->
-        <div id="notification-card" class="card p-3 rounded-lg flex items-center shadow-2xl border-l-4 border-green-500">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-3 text-green-400 animate-pulse">
-                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75h1.5a.75.75 0 0 0 0-1.5H12V9a.75.75 0 0 0-.75-.75Z" clip-rule="evenodd" />
-            </svg>
-            <div>
-                <p id="activity-text" class="text-sm font-semibold text-white">Loading activity...</p>
-                <p class="text-xs text-gray-400">Just joined Muahshi Digital</p>
-            </div>
+          <div style="margin-top:18px" class="adsafe card">
+            <div style="font-weight:700">Important — Affiliate & Ad Disclosure</div>
+            <div class="small">This site earns commissions when you sign up using our referral links. We may show ads to monetize traffic. Always check Terms & Conditions of the referenced apps and start with small deposits. We do not guarantee earnings.</div>
+          </div>
         </div>
 
-        <!-- How to Work / How to Earn Video Section (Clarity & Trust) -->
-        <section class="card p-6 rounded-2xl shadow-xl">
-            <h3 class="text-2xl font-bold mb-4 text-center gradient-text">🎥 Dekho: Kaise Kaam Karein aur Kamayein?</h3>
-            <p class="text-center text-gray-300 mb-6">Agar aap naye hain, toh yeh video dekhein. Saare steps clear hain: Registration se lekar Pehle Withdrawal tak!</p>
-            
-            <div class="video-container">
-                <!-- User YouTube Embed Link Yahan Dalna Hai -->
-                <!-- Example YouTube Embed (Replace YOUR_VIDEO_ID) -->
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <p class="text-center text-sm text-red-400 mt-2">⚠️ Video ID ko **YOUR_VIDEO_ID** se badalna na bhoolein!</p>
-            </div>
-        </section>
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin:0 0 8px">Latest Guides</h3>
+          <div class="blog-list">
+            <a href="#" class="muted">How to withdraw instantly from reward apps — step-by-step</a>
+            <a href="#" class="muted">Top safety tips while using reward platforms</a>
+            <a href="#" class="muted">Daily ₹1000 plan — 3 hours workflow</a>
+          </div>
+        </div>
 
-        <!-- Referral Code Section -->
-        <section class="p-6 card rounded-2xl text-center shadow-xl">
-            <h3 class="text-xl sm:text-2xl font-bold mb-4 text-green-400">✅ Aapka Official Invitation Code:</h3>
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
-                <span id="referralCode" class="text-4xl sm:text-5xl font-extrabold px-6 py-3 rounded-xl bg-gray-900 border-2 border-green-500 tracking-wider select-all">
-                    wg9ofP
-                </span>
-                <button onclick="copyToClipboard('wg9ofP', 'code-copy-status')" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-200">
-                    Code Copy Karein
-                </button>
-            </div>
-            <p id="code-copy-status" class="text-sm mt-3 text-gray-400 h-4"></p>
-        </section>
+        <div class="card" style="margin-top:12px">
+          <h3 style="margin:0 0 8px">Why Dailymoneyhub?</h3>
+          <p class="muted">We collect app links, explain how they work, and help you get started quickly. We do not own these apps — we link to official signup pages. Use platforms at your own risk.</p>
+        </div>
+      </div>
 
-        <!-- Income Chart and Trust -->
-        <section class="grid md:grid-cols-1 gap-6">
-            
-            <!-- Daily Task Income Chart (Updated as per image) -->
-            <div class="card p-6 rounded-2xl shadow-xl">
-                <h3 class="text-2xl font-bold mb-4 text-center gradient-text">💰 DAILY TASK COMMISSION DETAILS (Level Wise)</h3>
-                <p class="text-center text-sm text-yellow-400 mb-4">Aapki Earning aapke VIP Level aur Task Amount par depend karti hai.</p>
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left responsive-table">
-                        <thead class="text-xs uppercase bg-gray-700/50">
-                            <tr>
-                                <th scope="col" class="px-3 py-2">Level</th>
-                                <th scope="col" class="px-3 py-2">Order Amount (₹)</th>
-                                <th scope="col" class="px-3 py-2">Task Comm. (%)</th>
-                                <th scope="col" class="px-3 py-2">Total Tasks</th>
-                                <th scope="col" class="px-3 py-2 text-yellow-400">DAILY INCOME (₹)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L1</td><td>100</td><td>5%</td><td>30</td><td class="text-yellow-300">150</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L2</td><td>300</td><td>5.5%</td><td>30</td><td class="text-yellow-300">495</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L3</td><td>500</td><td>6%</td><td>30</td><td class="text-yellow-300">900</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L4</td><td>1000</td><td>7%</td><td>30</td><td class="text-yellow-300">2100</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L5</td><td>3000</td><td>7.5%</td><td>30</td><td class="text-yellow-300">6750</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L6</td><td>5000</td><td>8%</td><td>30</td><td class="text-yellow-300">12000</td></tr>
-                            <tr class="border-b border-gray-700/50 hover:bg-gray-800/50"><td class="px-3 py-2">L7</td><td>10000</td><td>8.5%</td><td>30</td><td class="text-4xl font-bold text-green-400">25500</td></tr>
-                        </tbody>
-                    </table>
-                </div>
+      <aside class="sidebar">
+        <div class="card">
+          <h4 style="margin:0 0 8px">Featured Apps</h4>
+          <div class="apps" id="apps">
+            <div class="app">
+              <div class="logo-sm">OP</div>
+              <div class="info">
+                <div style="font-weight:700">OnePay</div>
+                <div class="muted">Rewards & instant payout</div>
+              </div>
+              <div>
+                <a class="btn" href="https://land.onexx.top?inviteCode=wg9ofP" target="_blank" rel="noopener noreferrer nofollow sponsored">Open</a>
+              </div>
             </div>
 
-            <!-- Referral Income Section (New Addition) -->
-            <div class="card p-6 rounded-2xl shadow-xl">
-                <h3 class="text-2xl font-bold mb-4 text-center gradient-text">👥 REFER KARO, DOUBLE KAMAO (Team Income)</h3>
-                <p class="text-center text-gray-300 mb-6">Apni team banao aur har level se extra commission paao. Yeh hai aapki passive income!</p>
-                
-                <div class="space-y-4">
-                    <div class="bg-gray-900/50 p-4 rounded-xl border-l-4 border-yellow-500">
-                        <p class="font-bold text-lg text-yellow-300">Tier 1 Referrals (Direct)</p>
-                        <p class="text-sm text-gray-400">Aapke dost jitna kamayenge, uska **10%** commission aapko milega. (Life-time)</p>
-                    </div>
-                    <div class="bg-gray-900/50 p-4 rounded-xl border-l-4 border-blue-500">
-                        <p class="font-bold text-lg text-blue-300">Tier 2 Referrals</p>
-                        <p class="text-sm text-gray-400">Tier 1 waale dost agar kisi aur ko invite karte hain, toh unki income ka **5%** aapko milega.</p>
-                    </div>
-                    <div class="bg-gray-900/50 p-4 rounded-xl border-l-4 border-green-500">
-                        <p class="font-bold text-lg text-green-300">Tier 3 Referrals</p>
-                        <p class="text-sm text-gray-400">Tier 2 waale dost agar aage aur kisi ko invite karte hain, toh unki income ka **3%** aapko milega.</p>
-                    </div>
-                </div>
-                <p class="text-sm text-center text-red-400 mt-4 font-semibold">Is tarah, aapki income sirf aapke tasks par nahi, balki aapki poori team ki mehnat par depend karti hai!</p>
+            <div class="app">
+              <div class="logo-sm">IC</div>
+              <div class="info">
+                <div style="font-weight:700">InCoinPay</div>
+                <div class="muted">Rewards base with referral bonus</div>
+              </div>
+              <div>
+                <a class="btn" href="https://newh5.incoinpay.net?inviteCode=111523y382" target="_blank" rel="noopener noreferrer nofollow sponsored">Open</a>
+              </div>
             </div>
 
-            <!-- Key Benefits / Trust Points (Unchanged, but well-placed) -->
-            <div class="card p-6 rounded-2xl shadow-xl flex flex-col justify-center space-y-4">
-                <h3 class="text-xl font-bold mb-4 text-center gradient-text">⭐ WHY JOIN ONEPAY?</h3>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-green-400">✅</span>
-                    <div>
-                        <p class="font-bold text-lg">Official Partnership</p>
-                        <p class="text-sm text-gray-400">Muahshi Digital aur OnePay ka bharosemand collaboration.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-green-400">🛡️</span>
-                    <div>
-                        <p class="font-bold text-lg">Safe & Secure Income</p>
-                        <p class="text-sm text-gray-400">Stable income ke saath roz paise kamao.</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <span class="text-3xl mr-3 text-yellow-400">💸</span>
-                    <div>
-                        <p class="font-bold text-lg">Instant Withdrawal</p>
-                        <p class="text-sm text-gray-400">Sirf do tasks complete karne ke baad withdrawal available.</p>
-                    </div>
-                </div>
-                <div class="mt-4 pt-4 border-t border-gray-700/50">
-                    <a href="https://t.me/+4UYBvqMvZFI2ZDdl" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors block text-center font-semibold text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline-block mr-2">
-                          <path d="M7.749 20.301 22 3.513 14.636 21.487l-3.328-8.209-3.559 3.559.001.001 7.279-7.279.792-.792.001-.001-8.23-3.332-1.928 4.793z"/>
-                        </svg>
-                        Official Telegram Group Join Karein
-                    </a>
-                </div>
+            <div class="app">
+              <div class="logo-sm">BW</div>
+              <div class="info">
+                <div style="font-weight:700">BigWinner</div>
+                <div class="muted">Instant tasks & payout</div>
+              </div>
+              <div>
+                <a class="btn" href="https://register.bigwinner.top/?inviteCode=9NY0C7TMZF&logo=1" target="_blank" rel="noopener noreferrer nofollow sponsored">Open</a>
+              </div>
             </div>
+          </div>
 
-        </section>
+          <div style="margin-top:12px">
+            <div class="small">Pro tip: Read each app's verification & payout rules before withdrawing. We recommend testing with small amounts first.</div>
+          </div>
+        </div>
 
-        <!-- Trust and Security Badges (New Addition for High Trust) -->
-        <section class="text-center mt-8 p-6 card rounded-2xl shadow-xl">
-            <h4 class="text-xl font-bold mb-4 text-green-400">🛡️ Security Aur Bharosa</h4>
-            <div class="flex flex-wrap justify-center items-center gap-6">
-                <div class="flex items-center text-sm text-green-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mr-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.617 2.394-1.547 3.056l-3.342 3.341a1.002 1.002 0 0 1-1.414 0l-3.342-3.341A4.5 4.5 0 0 0 3 12m18 0a9 9 0 1 0-18 0" />
-                    </svg>
-                    100% Verified Tasks
-                </div>
-                <div class="flex items-center text-sm text-green-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mr-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m3.75-9a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H9.75Z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15a1.5 1.5 0 0 0-1.5 1.5v6.75a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-6.75a1.5 1.5 0 0 0-1.5-1.5Z" />
-                    </svg>
-                    SSL Encrypted
-                </div>
-                <div class="flex items-center text-sm text-green-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 mr-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12M18 9v6M6 15h12M12 18v3" />
-                    </svg>
-                    24/7 Telegram Support
-                </div>
-            </div>
-        </section>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Ad Slots (placeholders)</h4>
+          <div class="ad-slot" id="ad-header">AD: Header Banner (replace with ad network code)</div>
+          <div style="height:12px"></div>
+          <div class="ad-slot" id="ad-sidebar-1">AD: Sidebar 300x250 (replace with ad network code)</div>
+        </div>
 
-        <!-- Footer / Secondary CTA -->
-        <footer class="text-center p-6 mt-8 card rounded-xl shadow-lg">
-            <h4 class="text-xl font-bold mb-3">🔥 Der Mat Karo!</h4>
-            <!-- TRACKING ADDED HERE: onClick="trackButtonClick()" -->
-            <a href="https://dq183hk79qpob.cloudfront.net/onePayLand/index.html?inviteCode=wg9ofP" target="_blank" onclick="trackButtonClick()" class="bg-red-600 hover:bg-red-700 text-white font-black text-lg py-3 px-6 rounded-full shadow-lg transition duration-200">
-                ABHI REGISTER KAREIN! 
-            </a>
-            <p class="text-sm mt-3 text-gray-400">Apna referral code **wg9ofP** zarur use karein.</p>
-        </footer>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Earn via Ads</h4>
+          <p class="muted">You can sell ad space or use contextual ad networks. Keep ad density moderate for better UX and ad network compliance.</p>
+        </div>
+      </aside>
+    </section>
 
+    <section id="how" class="card" style="margin-top:18px">
+      <h3>How it works</h3>
+      <div class="grid-2" style="margin-top:10px">
+        <div>
+          <ol>
+            <li>Click the app button and sign up using the referral link (we receive commission on successful referrals).</li>
+            <li>Follow the app-specific guide provided on the next page and complete simple tasks or KYC if required.</li>
+            <li>Withdraw when you reach the minimum payout — follow our withdrawal guide and keep records/screenshots.</li>
+          </ol>
+          <p class="small">Note: We provide links and guides. Always check app T&Cs and start with small amounts.</p>
+        </div>
+        <div>
+          <h4 style="margin:0 0 8px">Withdrawal proof</h4>
+          <p class="muted">Keep screenshots of payout history. We recommend testing small withdrawals first and documenting the process for your records.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="card" style="margin-top:18px">
+      <h3>Blog & Guides</h3>
+      <div class="muted">(Add long-form guides here later — good for SEO and Ad approval.)</div>
+    </section>
+
+    <section id="faq" class="card faq" style="margin-top:18px">
+      <h3>FAQ</h3>
+      <div>
+        <strong>Are these apps safe?</strong>
+        <p class="muted">These are third-party apps. We link directly to their signup pages. Start with small amounts and check app reviews. If something seems suspicious, do not share personal documents until you verify authenticity.</p>
+      </div>
+      <div style="margin-top:10px">
+        <strong>Do I need to pay to start?</strong>
+        <p class="muted">Some features or faster earning routes may require purchasing reward packages. Always confirm before spending and prefer low initial amounts.</p>
+      </div>
+      <div style="margin-top:10px">
+        <strong>How do you get commission?</strong>
+        <p class="muted">We earn commissions when users sign up or perform eligible actions via our referral links. This helps us keep the site live and produce guides.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">Disclaimer: Dailymoneyhub is an information and referral site. We are not the owner of OnePay, InCoinPay, or BigWinner. Use platforms at your own risk. Always read terms. <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></div>
+    </footer>
+
+    <!-- Modal (shows once per session after 20s) -->
+    <div id="timedModal" style="display:none" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true">
+        <div class="modal-card">
+          <button class="close" onclick="closeModal()" aria-label="close">✕</button>
+          <h3 style="margin-top:0">Special Offer</h3>
+          <p class="muted">Sign up using our referral links for faster onboarding tips and a setup checklist. We do not guarantee earnings. Promotional banner — replace with advertiser content if you run ads.</p>
+          <div style="margin-top:12px">
+            <a class="btn" href="https://land.onexx.top?inviteCode=wg9ofP" target="_blank" rel="noopener noreferrer nofollow sponsored">Claim on OnePay</a>
+            <a class="btn" style="background:#14532d;margin-left:8px" href="https://newh5.incoinpay.net?inviteCode=111523y382" target="_blank" rel="noopener noreferrer nofollow sponsored">Claim on InCoinPay</a>
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Shows once per session. Close anytime.</div>
+        </div>
+      </div>
     </div>
 
-    <!-- JavaScript for Copy Functionality and Live Activity -->
-    <script>
-        // --- 1. Copy to Clipboard Function ---
-        function copyToClipboard(text, statusElementId) {
-            const textarea = document.createElement('textarea');
-            textarea.value = text;
-            textarea.style.position = 'fixed'; 
-            document.body.appendChild(textarea);
-            textarea.focus();
-            textarea.select();
-            try {
-                const successful = document.execCommand('copy');
-                const statusElement = document.getElementById(statusElementId);
-                if (successful) {
-                    statusElement.textContent = '✅ Code Copy Ho Gaya!';
-                    statusElement.classList.add('text-green-400');
-                    statusElement.classList.remove('text-red-400');
-                } else {
-                    statusElement.textContent = '❌ Copy Failed. Manually copy karein.';
-                    statusElement.classList.add('text-red-400');
-                    statusElement.classList.remove('text-green-400');
-                }
-            } catch (err) {
-                console.error('Copy failed:', err);
-                const statusElement = document.getElementById(statusElementId);
-                statusElement.textContent = '❌ Copy Failed. Manually copy karein.';
-                statusElement.classList.add('text-red-400');
-                statusElement.classList.remove('text-green-400');
-            }
-            document.body.removeChild(textarea);
+  </div>
 
-            setTimeout(() => {
-                const statusElement = document.getElementById(statusElementId);
-                if(statusElement) statusElement.textContent = '';
-            }, 3000);
+  <!-- Cookie / Consent bar (simple) -->
+  <div id="cookieBar" class="cookie" style="display:none" role="region" aria-label="cookie consent">
+    <div style="flex:1">
+      <strong>We use cookies & ads</strong>
+      <div class="small">To personalize content and ads, we use cookies. By continuing, you accept our <a href="/privacy.html">Privacy Policy</a>.</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="btn" id="acceptCookies">Accept</button>
+      <button class="small" id="manageCookies" onclick="openPrivacy()">Manage</button>
+    </div>
+  </div>
+
+  <script>
+    // Modal: shows after 20 seconds, only once per session
+    (function(){
+      try{
+        if(!sessionStorage.getItem('dmh-modal-shown')){
+          setTimeout(function(){
+            document.getElementById('timedModal').style.display='block';
+            sessionStorage.setItem('dmh-modal-shown','1');
+          }, 20000); // 20000 ms = 20 seconds
         }
+      }catch(e){console.warn(e)}
+    })();
+    function closeModal(){ document.getElementById('timedModal').style.display='none' }
 
-        // --- 2. Live Activity Simulation ---
-        const names = [
-            'R*h*ul D.', 'S*a*nta S.', 'P*r*iya K.', 'A*l*ok M.', 'G*a*nesh L.', 
-            'J*a*y N.', 'V*i*krant P.', 'D*e*v A.', 'M*o*han Z.', 'K*a*mal S.'
-        ];
-        const cities = [
-            'Delhi', 'Mumbai', 'Bangalore', 'Pune', 'Hyderabad', 'Jaipur', 'Lucknow'
-        ];
-        
-        const activityCard = document.getElementById('notification-card');
-        const activityText = document.getElementById('activity-text');
+    // Cookie consent
+    document.addEventListener('DOMContentLoaded', function(){
+      if(!localStorage.getItem('dmh-cookies')){
+        document.getElementById('cookieBar').style.display='flex';
+      }
+      document.getElementById('acceptCookies').addEventListener('click', function(){
+        localStorage.setItem('dmh-cookies','1');
+        document.getElementById('cookieBar').style.display='none';
+      });
+    });
+    function openPrivacy(){ window.location.href='/privacy.html' }
 
-        function showRandomActivity() {
-            const randomName = names[Math.floor(Math.random() * names.length)];
-            const randomCity = cities[Math.floor(Math.random() * cities.length)];
-            const timeAgo = Math.floor(Math.random() * 5) + 1; // 1 to 5 minutes ago
+    // Lazy ad placeholder replacement (safe fallback for networks)
+    document.addEventListener('DOMContentLoaded', function(){
+      var ad = document.getElementById('ad-header'); if(ad) ad.innerText = 'AD: Header Banner (replace with ad network code)';
+      var ad2 = document.getElementById('ad-sidebar-1'); if(ad2) ad2.innerText = 'AD: Sidebar 300x250 (replace with ad network code)';
+    });
 
-            activityText.textContent = `${randomName} from ${randomCity} just joined!`;
-            activityCard.style.opacity = '1';
-            activityCard.style.transform = 'translate(-50%, 0)';
+    // Security hint: ensure affiliate links use HTTPS and include rel attributes (nofollow sponsored)
+  </script>
 
-            // Hide after 4 seconds
-            setTimeout(() => {
-                activityCard.style.opacity = '0';
-                activityCard.style.transform = 'translate(-50%, 100%)';
-            }, 4000);
-        }
+  <!-- Analytics & Ads: Add your scripts below after account approval -->
+  <!-- Example: Google Tag Manager / GA4 placeholders -->
+  <!-- <script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX" async></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXX');
+  </script> -->
 
-        // Loop the activity every 8 to 15 seconds
-        function startActivityLoop() {
-            const delay = Math.floor(Math.random() * 7000) + 8000; // 8s to 15s delay
-            showRandomActivity();
-            setTimeout(startActivityLoop, delay);
-        }
-
-        // Start the loop when the page loads
-        document.addEventListener('DOMContentLoaded', startActivityLoop);
-
-    </script>
+  <!-- Noscript fallback for ad placeholders -->
+  <noscript>
+    <div style="text-align:center;padding:12px;color:var(--muted)">Enable JavaScript to see ads and interactive content.</div>
+  </noscript>
 </body>
 </html>
-
